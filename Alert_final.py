@@ -41,15 +41,15 @@ def sms(stockname , level):
     #4 Now you can edit the body and give your number than it will send that msg to your number if function executed
     #5 The requied position in this funcitons are only for the body of the msg 
     '''
-    account_sid = 'ACf6e7a923569e9fc634867ccfb54ed50d'
-    auth_token = '3da6d0e4e0962799c84309dce6a9fcfd'
+    account_sid = 'twilio sid'
+    auth_token = 'token from twilio website'
     client = Client(account_sid, auth_token)
 
     message = client.messages \
                     .create(
                         body= f"{stockname} has crossed the level of rs.{level}",
                         from_='+12019755266',
-                        to='+918104357733'
+                        to='your number with country code'
                     )
 
 
